@@ -24,6 +24,9 @@ def showPlace(name):
 
 location = st.sidebar.text_input('Where do you want to go?')
 
+if not location:
+    st.write('# ⬅️ Please enter a word or location')
+
 if location:
     m, geoinfo = showPlace(location)
     if m == 'Something fucked up with the geocoding, try again i guess':
