@@ -3,3 +3,4 @@ streamlit
 pandas
 geopandas
 streamlit-folium
+geopy
